@@ -8,14 +8,16 @@ npm run build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
-
+echo 1
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
 git init
+echo 2
 git add -A
+echo 3
 git commit -m 'deploy'
-
+echo 4
 # 如果发布到 https://<USERNAME>.github.io  USERNAME=你的用户名 
 # git push -f git@github.com:<gavinhe322>/<gavinhe322>.github.io.git master
 
