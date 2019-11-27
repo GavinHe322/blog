@@ -1,7 +1,7 @@
 # .travis.yml
 language: node_js   #前端工程所以是JavaScript，编译环境是node_js
 node_js:
-- '10.15.3'   #指定node版本
+- lts/* # 指定最新版本
 branchs:
   only:
   - master  #指定只有检测到master分支有变动时才执行任务
@@ -14,6 +14,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   local-dir: .vuepress/dist
+  target_branch: gh-pages
   on:
     branch: master
   github-token: $GITHUB_TOKEN
