@@ -8,7 +8,7 @@ branchs:
 install:
   - npm install
 script:
-  - npm run d
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
