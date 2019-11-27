@@ -8,12 +8,12 @@ branchs:
 install:
   - npm install
 script:
-  - npm run d
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  local-dir: docs/.vuepress/dist
+  local-dir: ./docs/.vuepress/dist
   target_branch: gh-pages
   on:
     branch: master
