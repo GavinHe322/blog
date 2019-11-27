@@ -25,6 +25,6 @@ echo 4
 
 # https://gavinhe322.github.io/blog/
 #04409dfc91c3548d269efe3b473489b7b4396411
-git push -f https://github.com/Gavinhe322/blog.git master:gh-pages
+git push -f https://github.com/GavinHe322/blog.git master:gh-pages
 
 cd -
