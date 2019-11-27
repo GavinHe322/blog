@@ -13,7 +13,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  local-dir: .vuepress/dist
+  local-dir: docs/.vuepress/dist
   target_branch: gh-pages
   on:
     branch: master
