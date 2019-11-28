@@ -38,14 +38,10 @@ install:
     - npm install
 script:
     - npm run build
-after_success:
-    - cd docs/.vuepress/dist
-    - git init
-    - git config --global user.name "${U_NAME}"
-    - git config --global user.email "${U_EMAIL}"
-    - git add -A
-    - git commit -m 'deploy'
-    - git push --quiet --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-branches:
-  only:
-    - master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
