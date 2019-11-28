@@ -45,8 +45,7 @@ after_success:
     - git config --global user.email "${U_EMAIL}"
     - git add -A
     - git commit -m 'deploy'
-    - git remote -v
-    - git remote add origin https://github.com/GavinHe322/blog.git
-    - git remote -v
-    # - git push -f https://github.com/GavinHe322/blog.git master:gh-pages
     - git push --quiet --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+branches:
+  only:
+    - master
