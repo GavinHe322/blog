@@ -26,10 +26,6 @@ echo 4
 # 如果发布到 https://<USERNAME>.github.io/<REPO>  REPO=github上的项目
 
 # https://gavinhe322.github.io/blog/
-#04409dfc91c3548d269efe3b473489b7b4396411
-# 8488f877b3f67f7dc5bcfd2fec22bc88c8101c4a
-# 391520cd67a3a244215080b8e7904c056b6b8d28
-# fbe82e40dffb8d1b5e3cbcb6927cf6511a3abffds
 git push -f https://github.com/GavinHe322/blog.git master:gh-pages
 
 cd -
