@@ -1,9 +1,12 @@
+---
+meta:
+  - name: referrer
+    content: never
+---
 
 > ## Jenkins
-
 ### **概念**
 - Jenkins是一款开源 CI&CD 软件，用于自动化各种任务，包括构建、测试和部署软件。
-
 - Jenkins 支持各种运行方式，可通过系统包、Docker 或者通过一个独立的 Java 程序。
 
 ### **为什么要学**
@@ -183,7 +186,7 @@ server {
       }
 }
 ```
-**然后打开就 ip:8000 就能访问了。
+**然后打开就 ip:8000 就能访问了。**
 
 ![](https://user-gold-cdn.xitu.io/2019/11/23/16e9804b2bf8f65f?w=2890&h=778&f=png&s=121151)
 
