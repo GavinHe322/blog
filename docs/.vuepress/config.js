@@ -49,6 +49,10 @@ module.exports = {
               title: 'jenkins',
               path: '/feat/pages/jenkins'
             },
+            {
+              title: 'node',
+              path: '/feat/pages/node'
+            },
           ]
         },
         {
@@ -61,6 +65,10 @@ module.exports = {
             {
               title: 'vuex',
               path: '/feat/pages/vuex'
+            },
+            {
+              title: '移动端适配方案',
+              path: '/feat/pages/viewport'
             },
           ]
         }
