@@ -70,6 +70,10 @@ module.exports = {
               title: '移动端适配方案',
               path: '/feat/pages/viewport'
             },
+            {
+              title: '图片懒加载',
+              path: '/feat/pages/lazy-img'
+            },
           ]
         }
       ]
