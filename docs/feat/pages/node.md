@@ -42,3 +42,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 // source ~/.bashrc 
 ```
+
+## npm 和 yarn 
+
+[区别](https://yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison)
