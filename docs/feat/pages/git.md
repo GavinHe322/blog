@@ -77,6 +77,12 @@ git log --pretty=oneline
 ## commit
 
 ```shell
-# 用于撤回
+# 用于撤回当前修改 commit message
 git commit --amend
+```
+
+## tag
+
+```shell
+
 ```
