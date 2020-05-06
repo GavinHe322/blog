@@ -55,7 +55,7 @@ git clone -b [branch-name] [url]
 git diff
 
 # 缓存区
-git diff -cached
+git diff --cached
 ```
 
 ## log
