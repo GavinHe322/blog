@@ -1,3 +1,4 @@
+
 module.exports = {
   // 设置网站标题
   title: '笔记',
@@ -20,7 +21,7 @@ module.exports = {
       },
       {
         text: '问题',
-        link: '/problem/'
+        link: '/redirect/'
       },
       {
         text: '技术沉淀',
@@ -33,11 +34,11 @@ module.exports = {
     ],
     // 侧边栏
     sidebar: {
-      '/problem/': [
+      '/redirect/': [
         {
           title: '问题',
           children: [
-            '/problem/pages/代码迁移'
+            '/redirect/pages/代码迁移'
           ]
         },
       ],
