@@ -75,6 +75,10 @@ module.exports = {
               title: '图片懒加载',
               path: '/feat/pages/lazy-img'
             },
+            {
+              title: 'git',
+              path: '/feat/pages/git'
+            },
           ]
         }
       ]

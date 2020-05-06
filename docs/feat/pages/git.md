@@ -1,0 +1,82 @@
+## 安装
+```js
+// linux
+yum install git-all
+
+// mac
+brew install git
+```
+
+## config
+
+**全局 只需设置一直 设置后无法修改**
+
+```shell
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+**如果在单独的项目使用不用 user.name，则需输入没有 --global 即可**
+
+```shell
+git config user.name "John Doe"
+git config user.email johndeo@example.com
+```
+
+## 获取帮助
+
+```shell
+git help config
+man git-config
+```
+
+## clone
+
+```shell
+git clone xxxxxx
+
+# newDirName 表示用新文件名
+git clone xxxxxx newDirName
+
+# 指定分支
+git clone -b [branch-name] [url]
+```
+
+## status
+
+```shell
+# --long [Give the output in the long-format. this is the default]
+# -s, --short  [Give the output in the short-format]
+```
+
+## diff
+
+```shell
+# 查看当前修改的代码
+git diff
+
+# 缓存区
+git diff -cached
+```
+
+## log
+
+```shell
+# long-format
+git log
+
+# short-format
+git log --stat
+
+# 当查看大数量信息时，一行显示
+git log --pretty=oneline
+
+# 自定义显示
+# https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2#pretty_format
+```
+
+## commit
+
+```shell
+# 用于撤回
+git commit --amend
+```
