@@ -84,5 +84,6 @@ git commit --amend
 ## tag
 
 ```shell
-
+# 打标签
+git tag -a v0.1 -m 'my first tag'
 ```
