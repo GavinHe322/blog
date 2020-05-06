@@ -55,7 +55,7 @@ git clone -b [branch-name] [url]
 git diff
 
 # 缓存区
-git diff -cached
+git diff --cached
 ```
 
 ## log
@@ -124,3 +124,11 @@ git merge branch-name
 以功能命名的分支
 
 ps: 请牢记，当你做这么多操作的时候，这些分支全部都存于本地。 当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中 —— 没有与服务器发生交互。
+
+# rebase
+
+```shell
+
+
+
+```
