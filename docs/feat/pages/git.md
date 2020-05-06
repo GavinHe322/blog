@@ -86,4 +86,10 @@ git commit --amend
 ```shell
 # 打标签
 git tag -a v0.1 -m 'my first tag'
+
+# 查看指定标签
+git show v0.1
+
+# 忘记打某个版本标签
+git tag -a v1.2 9fceb02[commit-id]
 ```
