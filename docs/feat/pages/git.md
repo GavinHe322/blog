@@ -93,3 +93,34 @@ git show v0.1
 # 忘记打某个版本标签
 git tag -a v1.2 9fceb02[commit-id]
 ```
+
+## branch
+
+**HEAD 指针关系**
+```shell
+# 创建分支
+git branch branch-name
+
+# 删除分支
+git branch -d
+
+# 查看分支
+git branch --all
+
+# 切换分支
+git checkout branch-name
+
+# 创建并切换
+git checkout -b branch-name
+
+# 合并分支
+git merge branch-name
+```
+
+# git work-flow
+
+**主题分支**
+
+以功能命名的分支
+
+ps: 请牢记，当你做这么多操作的时候，这些分支全部都存于本地。 当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中 —— 没有与服务器发生交互。
