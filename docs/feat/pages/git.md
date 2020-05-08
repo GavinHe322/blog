@@ -138,7 +138,7 @@ ps: 不要通过rebase对任何已经提交到公共仓库中的commit进行修�
 git rebase -i HEAD~[number]
 ```
 
-# 生成 SSH 公钥
+# 生成 ```SSH``` 公钥
 
 ```shell
 # 目录
@@ -146,4 +146,43 @@ cd ~/.ssh && ls
 
 # 生成公钥
 ssh-keygen -o
+```
+
+# 搭建远程 ```git``` 仓库
+
+**最快流程**
+
+## 1、ps: 一般我们是以团队开发，所以创建一个 git 目录来保存所有开发人员的秘钥
+```shell
+# 1.在 ~/.ssh 目录
+mkdir git && vim id_rsa_gavin.pub
+# 2.将成员秘钥写入 authorized_keys 文件
+cat id_rsa_gavin.pub >> ~/.ssh/authorized_keys
+```
+
+## 2、初始 ```git``` 仓库
+```shell
+cd /home
+
+# 创建一个裸存储库
+git init --bare project.git
+```
+
+## 3、在本地 ```clone``` 项目
+
+```shell
+# 如果没添加秘钥以下内容将会显示无权限
+git clone root@ip_server:/home/project.git
+
+cd project
+vim README.md
+git add -A
+git commit -m 'first add'
+git push
+```
+
+## 4、查看记录
+```shell
+# /home/project.git
+git log
 ```
