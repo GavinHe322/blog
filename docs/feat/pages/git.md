@@ -126,6 +126,7 @@ git merge branch-name
 ps: 请牢记，当你做这么多操作的时候，这些分支全部都存于本地。 当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中 —— 没有与服务器发生交互。
 
 # rebase
+在 Git 中整合来自不同分支的修改主要有两种方法：merge 以及 rebase
 
 ps: 不要通过rebase对任何已经提交到公共仓库中的commit进行修改（你自己一个人玩的分支除外）
 
@@ -135,4 +136,14 @@ ps: 不要通过rebase对任何已经提交到公共仓库中的commit进行修�
 
 #合并多个 commit
 git rebase -i HEAD~[number]
+```
+
+# 生成 SSH 公钥
+
+```shell
+# 目录
+cd ~/.ssh && ls
+
+# 生成公钥
+ssh-keygen -o
 ```
