@@ -186,3 +186,12 @@ git push
 # /home/project.git
 git log
 ```
+
+
+# git 原理
+
+## 目录
+  - objects 目录存储所有数据内容
+  - refs 目录存储指向数据（分支、远程仓库和标签等）的提交对象的指针
+  - HEAD 文件指向目前被检出的分支
+  - index 文件保存暂存区信息
