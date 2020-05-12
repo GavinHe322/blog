@@ -11,26 +11,6 @@
 #   - npm run build
 # # deploy:
 # #   provider: pages
-# #   skip-cleanup: true
-# #   keep-history: true
-# #   local-dir: ./docs/.vuepress/dist
-# #   target_branch: gh-pages
-# #   on:
-# #     branch: master
-# #   github-token: $GITHUB_TOKEN
-
-# after_script:
-# #  - cd ./public
-# #  - git init
-#   - git config user.name "gattia"
-#   - git config user.email "gattia.su@gmail.com"
-# #  - git add .
-# #  - git commit -m "Update docs"
-# #  - git push --force --quiet "${Travis}@${GH_REF}" master:master
-#   - sed -i "s/Travis/${Travis}/g" ./_config.yml
-#   - hexo deploy
-
-
 language: node_js
 node_js:
     - lts/* # 指定最新版本
