@@ -38,7 +38,16 @@ module.exports = {
         {
           title: '问题',
           children: [
-            '/redirect/pages/代码迁移'
+            '/redirect/pages/codeTransfer'
+          ]
+        },
+        {
+          title: '导出数据',
+          children: [
+            {
+              title: '导出数据',
+              path: '/redirect/pages/exportData'
+            }
           ]
         },
       ],

@@ -11,7 +11,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "element-ui": "2.12.0",
+    "js-export-excel": "^1.1.2",
+    "vue": "^2.6.11"
+  },
   "devDependencies": {
     "vuepress": "^1.2.0"
   }
