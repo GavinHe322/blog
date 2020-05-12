@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{291:function(n,t,e){"use strict";e.r(t);var i={methods:{login:function(){this.$router.push({path:"/home/index.html"})}}},s=e(1),o=Object(s.a)(i,(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("\n    这里可以写组件\n")])}),[],!1,null,null,null);t.default=o.exports}}]);
