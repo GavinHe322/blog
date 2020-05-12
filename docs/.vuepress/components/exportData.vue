@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     exportExcel () {
-      if (!data.length) {
+      if (!this.data.length) {
         return Message({
           message: '请输入数据',
           type: 'warning'
