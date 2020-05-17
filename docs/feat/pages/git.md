@@ -195,3 +195,44 @@ git log
   - refs 目录存储指向数据（分支、远程仓库和标签等）的提交对象的指针
   - HEAD 文件指向目前被检出的分支
   - index 文件保存暂存区信息
+
+## git 对象
+git 是一个内容寻址文件系统，这以为 git 是一个简单的键值对数据库(key-value data store)
+
+**使用 git hash-object 创建一个数据对象**
+
+```shell
+echo 'test content' | git hash-object -w --stdin
+d670460b4b4aece5915caf5c68d12f560a9fe3e4
+
+# 查看 git 是如何存储数据的
+find .git/objects -type f
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4
+
+# 读取数据
+git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+test content
+```
+
+```shell
+echo 'version 1' > test.txt
+git hash-object -w test.txt
+
+echo 'version 2' > test.txt
+git hash-object -w test.txt
+
+rm test.txt
+git cat-file -p xxxx >>> test.txt
+cat test.txt
+version 2
+
+这里两个问题 
+1. 记住 SHA-1值 并不现实
+2. 文件名没有保存，仅保存了文件的内容
+上诉对象我们称为 数据对象(blob object)
+
+git cat-file -t 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a
+blob
+```
+
+### 树对象
