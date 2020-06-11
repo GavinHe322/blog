@@ -63,6 +63,10 @@ module.exports = {
               title: 'node',
               path: '/feat/pages/node'
             },
+            {
+              title: 'mysql',
+              path: '/feat/pages/mysql'
+            },
           ]
         },
         {
