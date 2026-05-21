@@ -13,8 +13,8 @@ echo 1
 # echo 'www.example.com' > CNAME
 
 git init
-git config -–global user.name  'GavinHe322'
-git config –-global user.email '1521550385@qq.com'
+git config --local user.name 'GavinHe322'
+git config --local user.email '1521550385@qq.com'
 echo 2
 git add -A
 echo 3

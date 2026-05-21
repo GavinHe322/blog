@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "log",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
